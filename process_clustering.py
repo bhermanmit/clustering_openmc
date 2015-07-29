@@ -50,7 +50,7 @@ fig, ax = plt.subplots()
 scat = ax.scatter(xy[:, 0], xy[:, 1])
 
 # perform animation
-ani = animation.FuncAnimation(fig, animate, np.arange(1, n_batches))
+ani = animation.FuncAnimation(fig, animate, np.arange(1, n_batches), repeat=False)
 
 # either save or show during processing
 if options.save:

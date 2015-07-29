@@ -22,7 +22,7 @@ u235 = openmc.Nuclide('U-235')
 
 # Instantiate some Materials and register the appropriate Nuclides
 homog = openmc.Material(material_id=1, name='homogeneous')
-homog.set_density('g/cc', 10.0)
+homog.set_density('g/cc', 5.0)
 homog.add_nuclide(h1, 2.)
 homog.add_nuclide(o16, 1.)
 homog.add_nuclide(u235, 0.001)
